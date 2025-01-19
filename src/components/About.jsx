@@ -9,73 +9,47 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
             src={AboutImage}
-            alt=""
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
+            alt="About Me"
+            className="w-72 h-80 rounded object-cover mb-8 md:mb-0 mx-auto md:mx-0"
           />
           <div className="flex-1">
-            <p className="text-lg mb-8">
-              I am a passionate full-stack developer with a focus on building
-              modern and responsive web applications. With a strong foundation
-              in both frontend and backend technologies, I strive to create
-              seamless and efficient user experiences.
+            <p className="text-lg md:text-xl mb-8 text-justify">
+              I am passionate about Frontend Development and UI/UX Design. I specialize in creating user-friendly, aesthetically pleasing digital experiences. With a strong foundation in computer science principles and a keen eye for design, I strive to bridge the gap between functionality and visual appeal in web applications.
             </p>
+
             <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
+              {/* Languages Section */}
+              <div className="mb-4">
+                <span className="mr-4 font-semibold">Languages:</span>
+                <span className="hover:text-green-400 transform transition-all duration-300">Python, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">HTML, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">CSS, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">JavaScript</span>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
+
+              {/* Technologies/Frameworks Section */}
+              <div className="mb-4">
+                <span className="mr-4 font-semibold">Technologies/Frameworks:</span>
+                <span className="hover:text-green-400 transform transition-all duration-300">React.js, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">Node.js, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">Tailwind CSS</span>
               </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Node JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
-                </div>
+
+              {/* Developer Tools Section */}
+              <div className="mb-4">
+                <span className="mr-4 font-semibold">Developer Tools:</span>
+                <span className="hover:text-green-400 transform transition-all duration-300">GitHub, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">Git, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">VS Code</span>
               </div>
-            </div>
-            <div className="mt-12 flex justify-between text-center">
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        3+
-                    </h3>
-                    <p>Years Experience</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        50+
-                    </h3>
-                    <p>Projects Completed</p>
-                </div>
-                <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Happy Clients</p>
-                </div>
+
+              {/* Designer Tools Section */}
+              <div className="mb-4">
+                <span className="mr-4 font-semibold">Designer Tools:</span>
+                <span className="hover:text-green-400 transform transition-all duration-300">Figma, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">FigJam, </span>
+                <span className="hover:text-green-400 transform transition-all duration-300">Canva</span>
+              </div>
             </div>
           </div>
         </div>
